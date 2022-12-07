@@ -15,9 +15,9 @@ function playerSelection()
            playerChoice = playerChoice.trim();
            playerChoice = playerChoice.toLowerCase();
        }
-       validChecker = playerChoice.indexOf(playerChoice)<0 ? "Please enter a valid option" : "";
+       validChecker = computerChoice.indexOf(playerChoice)<0 ? "Please enter a valid option" : "";
    } 
-   while(playerChoice.indexOf(playerChoice)<0);
+   while(computerChoice.indexOf(playerChoice)<0);
    return playerChoice;
 }
 function computerSelect()
